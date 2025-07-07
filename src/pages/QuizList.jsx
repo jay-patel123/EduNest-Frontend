@@ -33,28 +33,7 @@ const QuizList = () => {
         setError("Failed to load quizzes")
 
         // Fallback to mock data
-        setQuizzes([
-          {
-            _id: 1,
-            topic: "React Fundamentals Quiz",
-            description: "Test your knowledge of React basics",
-            duration: 30,
-            questions: new Array(10),
-            totalMarks: 100,
-            rewardPoints: 100,
-            startAt: new Date().toISOString(),
-          },
-          {
-            _id: 2,
-            topic: "JavaScript Advanced Concepts",
-            description: "Challenge yourself with advanced JavaScript topics",
-            duration: 45,
-            questions: new Array(15),
-            totalMarks: 150,
-            rewardPoints: 150,
-            startAt: new Date().toISOString(),
-          },
-        ])
+        setQuizzes([])
       } finally {
         setLoading(false)
       }

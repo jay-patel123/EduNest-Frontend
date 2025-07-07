@@ -21,17 +21,7 @@ const OffersManagement = () => {
       startDate: "2023-06-01",
       endDate: "2023-08-31",
       status: "active",
-    },
-    {
-      id: 2,
-      title: "New Year Bundle",
-      description: "Buy 2 courses, get 1 free",
-      discountPercentage: null,
-      startDate: "2024-01-01",
-      endDate: "2024-01-31",
-      status: "scheduled",
-    },
-    // Add more offers as needed
+    }
   ])
 
   const [filters, setFilters] = useState({

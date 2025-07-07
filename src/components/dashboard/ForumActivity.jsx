@@ -1,22 +1,7 @@
 import React from "react"
 
 const ForumActivity = () => {
-  const forumPosts = [
-    {
-      user: "John Doe",
-      avatar: "/placeholder.svg",
-      title: "Am I learning the right way?",
-      time: "5 mins ago",
-      replies: 3,
-    },
-    {
-      user: "Jane Smith",
-      avatar: "/placeholder.svg",
-      title: "Need help with basic setup",
-      time: "7 mins ago",
-      replies: 2,
-    },
-  ]
+  const forumPosts = []
 
   return (
     <div className="dashboard-card forum-activity">

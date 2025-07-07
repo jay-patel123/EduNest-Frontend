@@ -1,7 +1,3 @@
-
-
-
-
 // Base URL for all API requests
 const BASE_URL = "https://edunest-backend-pc16.onrender.com/api"
 
@@ -76,7 +72,7 @@ const apiFetch = async (endpoint, options = {}) => {
       headers["Authorization"] = token.startsWith("Bearer ") ? token : `Bearer ${token}`
     }
 
-    console.log("Header is *********** ", headers)
+    console.log("Header is ", headers)
 
     // Prepare the request URL
     const url = `${BASE_URL}${endpoint}`
@@ -94,8 +90,7 @@ const apiFetch = async (endpoint, options = {}) => {
     }
 
     console.log(`Making ${options.method || "GET"} request to ${url}`)
-    console.log("🔹 Final Headers**********:", headers)
-    console.log("🔹 Authorization Header:", headers["Authorization"] || "Not provided")
+     console.log("🔹 Authorization Header:", headers["Authorization"] || "Not provided")
     console.log(`🔹 Request Method: ${fetchOptions.method || "GET"}`)
 
     const response = await fetch(url, fetchOptions)

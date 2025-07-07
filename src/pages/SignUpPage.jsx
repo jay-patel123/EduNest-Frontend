@@ -1,5 +1,3 @@
-
-
 "use client"
 
 import { useState } from "react"
@@ -137,18 +135,7 @@ export default function SignupPage() {
                 required
               />
             </div>
-
-            {/* <div className="form-group">
-              <label htmlFor="profilepicURL">Profile Picture URL</label>
-              <input
-                type="url"
-                id="profilepicURL"
-                name="profilepicURL"
-                placeholder="https://example.com/profile.jpg"
-                className="form-input"
-                onChange={handleChange}
-              />
-            </div> */}
+ 
 
             <div className="form-group">
               <label htmlFor="about">About</label>

@@ -1,106 +1,3 @@
-
-
-// "use client"
-
-// import { useState } from "react"
-// import { Star, Users, Clock, DollarSign } from "lucide-react"
-// import { Button } from "./ui/button"
-// import { useNavigate } from "react-router-dom"
-
-// const CourseCard = ({ course, onEnroll }) => {
-//   const [enrolling, setEnrolling] = useState(false)
-//   const navigate = useNavigate()
-
-//   const handleModuleEnroll = async () => {
-//     try {
-//       setEnrolling(true)
-//       await onEnroll()
-//     } catch (error) {
-//       console.error("Error enrolling in course:", error)
-//     } finally {
-//       setEnrolling(false)
-//     }
-//   }
-
-//   const handleFullCourseEnroll = () => {
-//     navigate(`/course/${course.id}/payment`, {
-//       state: {
-//         courseId: course.id,
-//         courseName: course.name,
-//         price: course.price,
-//         teacherName: course.teacherName,
-//       },
-//     })
-//   }
-
-//   return (
-//     <div className="course-card">
-//       <div className="course-image">
-//         <img
-//           src={course.courseImage || "/placeholder.svg?height=200&width=300"}
-//           alt={course.name}
-//           onError={(e) => {
-//             e.target.onerror = null // Prevent infinite loop
-//             e.target.src = "/placeholder.svg?height=200&width=300"
-//           }}
-//         />
-//         <span className="course-level">{course.level}</span>
-//       </div>
-//       <div className="course-content">
-//         <h3 className="course-title">{course.name}</h3>
-//         <p className="course-description">{course.description}</p>
-
-//         <div className="course-meta">
-//           <div className="meta-item">
-//             <Star className="star-icon" size={16} />
-//             <span>{course.rating}</span>
-//           </div>
-//           <div className="meta-item">
-//             <Users size={16} />
-//             <span>{course.students} students</span>
-//           </div>
-//           <div className="meta-item">
-//             <Clock size={16} />
-//             <span>{course.duration}</span>
-//           </div>
-//         </div>
-
-//         <div className="course-footer">
-//           <div className="teacher-info">
-//             <img
-//               src={course.teacherPhoto || "/placeholder.svg?height=50&width=50"}
-//               alt={course.teacherName}
-//               className="teacher-photo"
-//               onError={(e) => {
-//                 e.target.onerror = null // Prevent infinite loop
-//                 e.target.src = "/placeholder.svg?height=50&width=50"
-//               }}
-//             />
-//             <span className="teacher-name">{course.teacherName}</span>
-//           </div>
-//           <div className="course-price">
-//             {/* <DollarSign size={16} /> */}
-//             <span>${course.price}</span>
-//           </div>
-//         </div>
-//         <br/>
-//         <div className="enroll-buttons">
-//           <Button className="enroll-button" onClick={handleModuleEnroll} disabled={enrolling}>
-//             {enrolling ? "Enrolling..." : "Enroll Module by Module"}
-//           </Button>
-//           <br/>
-//           <br/>
-//           <Button className="enroll-full-button" onClick={handleFullCourseEnroll} variant="secondary">
-//             Enroll Full Course
-//           </Button>
-//         </div>
-//       </div>
-//     </div>
-//   )
-// }
-
-// export default CourseCard
-
 "use client"
 
 import { useState } from "react"
@@ -136,7 +33,7 @@ const CourseCard = ({ course, onEnroll }) => {
       // Get user points to check if they have enough
       const userData = await api.get("/student/profile")
       const userPoints = userData.rewardPoints || 0
-      const requiredPoints = course.price * 100
+      const requiredPoints = course.price 
 
       if (userPoints < requiredPoints) {
         // Not enough points - redirect to payment page
@@ -229,7 +126,7 @@ const CourseCard = ({ course, onEnroll }) => {
         <div className="enroll-buttons">
         <br/>
           <Button className="enroll-button" onClick={handleModuleEnroll} disabled={enrolling}>
-            {enrolling ? "Enrolling..." : "Enroll Module by Module"}
+            {enrolling ? "Enrolling..." : "Enroll Module "}
           </Button>
           <br/>
           <br/>

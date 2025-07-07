@@ -42,55 +42,9 @@ const CourseInventory = () => {
         console.error("Error fetching courses:", error)
         setError("Failed to load courses. Please try again.")
         // Fallback to mock data
-        setCourses([
-          {
-            _id: 1,
-            title: "Introduction to React",
-            teacherId: {
-              name: "Dr. Sarah Wilson",
-            },
-            category: "Web Development",
-            sell_price: 49.99,
-            duration: "6 weeks",
-            totalSell: 1234,
-            avgRating: 4.8,
-            isActivate: true,
-            thumbnail:
-              "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-14%20231018-3xvkonShQnU6QsQcjF5dbb9Mw3Dzgq.png",
-          },
-          {
-            _id: 2,
-            title: "Advanced JavaScript Concepts",
-            teacherId: {
-              name: "Prof. Michael Chen",
-            },
-            category: "Programming",
-            sell_price: 79.99,
-            duration: "8 weeks",
-            totalSell: 987,
-            avgRating: 4.9,
-            isActivate: true,
-            thumbnail:
-              "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-14%20231018-3xvkonShQnU6QsQcjF5dbb9Mw3Dzgq.png",
-          },
-          {
-            _id: 3,
-            title: "Python for Data Science",
-            teacherId: {
-              name: "Emily Rodriguez",
-            },
-            category: "Data Science",
-            sell_price: 69.99,
-            duration: "10 weeks",
-            totalSell: 756,
-            avgRating: 4.7,
-            isActivate: false,
-            thumbnail:
-              "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-14%20231018-3xvkonShQnU6QsQcjF5dbb9Mw3Dzgq.png",
-          },
-        ])
+        setCourses([])
 
-        setCategories(["Web Development", "Programming", "Data Science"])
+        setCategories([])
       } finally {
         setLoading(false)
       }

@@ -65,36 +65,7 @@ const MyPoints = () => {
         setError("Failed to load points data")
 
         // Fallback to mock data
-        setPointsData({
-          totalPoints: 1500,
-          availablePoints: 1500,
-          redeemedPoints: 0,
-          pointsHistory: [
-            {
-              id: 1,
-              type: "quiz",
-              name: "React Basics Assessment",
-              points: 250,
-              date: "2024-02-01",
-              rank: 1,
-            },
-            {
-              id: 2,
-              type: "monthly",
-              name: "Monthly Bonus",
-              points: 10,
-              date: "2024-01-15",
-            },
-            {
-              id: 3,
-              type: "course",
-              name: "Full Course Completion Bonus",
-              points: 30,
-              date: "2024-01-10",
-              courseName: "JavaScript Fundamentals",
-            },
-          ],
-        })
+        setPointsData()
       } finally {
         setLoading(false)
       }

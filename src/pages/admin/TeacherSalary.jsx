@@ -9,29 +9,7 @@ import { Search, DollarSign, Calendar, Download } from "lucide-react"
 import "../../assets/styles/admin/TeacherSalary.css"
 
 const TeacherSalary = () => {
-  const [salaries] = useState([
-    {
-      id: 1,
-      teacherName: "Dr. Sarah Wilson",
-      amount: 3500,
-      date: "2023-06-30",
-      status: "paid",
-    },
-    {
-      id: 2,
-      teacherName: "Prof. Michael Chen",
-      amount: 3200,
-      date: "2023-06-30",
-      status: "pending",
-    },
-    {
-      id: 3,
-      teacherName: "Emily Rodriguez",
-      amount: 2800,
-      date: "2023-06-30",
-      status: "processing",
-    },
-  ])
+  const [salaries] = useState([ ])
 
   const [filters, setFilters] = useState({
     status: "all",

@@ -2,20 +2,7 @@ import React from "react"
 import { Clock, Check, Info } from "lucide-react"
 
 const NewCourses = () => {
-  const courses = [
-    {
-      name: "Interactive Project Simulations",
-      deadline: "Start date:",
-      status: "Subscribe",
-      certification: true,
-    },
-    {
-      name: "Gamified Learning Modules",
-      deadline: "End date:",
-      status: "Subscribe",
-      certification: true,
-    },
-  ]
+  const courses = []
 
   return (
     <div className="dashboard-card">

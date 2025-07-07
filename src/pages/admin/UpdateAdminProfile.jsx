@@ -12,13 +12,7 @@ import "../../assets/styles/admin/UpdateAdminProfile.css"
 
 const UpdateAdminProfile = () => {
   const navigate = useNavigate()
-  const [formData, setFormData] = useState({
-    name: "John Doe",
-    email: "john.doe@example.com",
-    phone: "+1 (555) 123-4567",
-    location: "New York, NY",
-    bio: "Experienced administrator with a passion for educational technology and improving learning experiences.",
-  })
+  const [formData, setFormData] = useState()
 
   const handleInputChange = (e) => {
     const { name, value } = e.target

@@ -2,28 +2,9 @@ import React from "react"
 import { Check, X } from "lucide-react"
 
 const EnrolledCourses = () => {
-  const courses = [
-    {
-      name: "Introduction to MERN Technology",
-      subscription: "Today",
-      status: "Enrolled",
-      progress: 75,
-    },
-    {
-      name: "React.js Fundamentals",
-      subscription: "Tomorrow",
-      status: "Enrolled",
-      progress: 45,
-    },
-    {
-      name: "Node.js Essentials",
-      subscription: "Yesterday",
-      status: "Enrolled",
-      progress: 25,
-    },
-  ]
-
-  return (
+  const courses = []
+  
+    return (
     <div className="dashboard-card enrolled-courses">
       <h3>Your enrolled courses</h3>
       <div className="courses-list">

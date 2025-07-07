@@ -1,12 +1,3 @@
-/* .dashboard-card {
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
-  } */
-  
   .card-header {
     display: flex;
     justify-content: space-between;

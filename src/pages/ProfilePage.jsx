@@ -1,5 +1,3 @@
-
-
 "use client"
 
 import { useState, useEffect } from "react"
@@ -50,25 +48,7 @@ const ProfilePage = () => {
         setError("Failed to load profile data")
 
         // Fallback to mock data if API fails
-        setStudentInfo({
-          name: "Emily Johnson",
-          email: "emily.johnson@example.com",
-          contactNumber: "+1 (555) 123-4567",
-          profilepicURL:
-            "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&auto=format&fit=crop&q=60",
-          about:
-            "Passionate about web development and always eager to learn new technologies. Currently focusing on mastering React and Node.js.",
-          skills: ["HTML", "CSS", "JavaScript", "React", "Node.js"],
-          join_date: "2023-09-01",
-          courses_enrolled: 5,
-          modules_enrolled: 8,
-          rewardPoints: 120,
-          recent_achievement: [
-            "Completed Advanced JavaScript Course",
-            "Earned React Developer Certificate",
-            "Contributed to open-source project",
-          ],
-        })
+        setStudentInfo()
       } finally {
         setLoading(false)
       }

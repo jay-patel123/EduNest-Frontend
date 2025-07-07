@@ -43,17 +43,6 @@ const EditCourse = () => {
         setLoading(true)
         console.log("Fetching course data for ID:", courseId)
 
-        // Check authentication
-        // if (!api.isAuthenticated()) {
-        //   navigate("/login", {
-        //     state: {
-        //       from: `/teacher/edit-course/${courseId}`,
-        //       message: "Please log in to edit courses",
-        //     },
-        //   })
-        //   return
-        // }
-
         // Validate courseId before making the request
         if (!courseId) {
           throw new Error("Course ID is missing or invalid")
