@@ -1,5 +1,6 @@
 // Base URL for all API requests
-const BASE_URL = "https://edunest-backend-pc16.onrender.com/api"
+// const BASE_URL = "https://edunest-backend-pc16.onrender.com/api"
+const BASE_URL ="http://localhost:5000/api"
 
 // Helper function to get the auth token
 export const getAuthToken = () => {
@@ -34,7 +35,7 @@ export const getUserData = () => {
 export const logout = () => {
   setAuthToken(null)
   localStorage.removeItem("userData")
-  localStorage.removeItem("role")
+  localStorage.removeItem("role");
   // Clear any other auth-related items
   localStorage.removeItem("token")
   localStorage.removeItem("authToken")
@@ -81,6 +82,7 @@ const apiFetch = async (endpoint, options = {}) => {
     const fetchOptions = {
       ...options,
       headers,
+credentials: "include",
       mode: "cors",
     }
 
@@ -211,4 +213,4 @@ export const authAPI = {
 
 export default api
 
-
+ 
