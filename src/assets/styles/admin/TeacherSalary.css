@@ -1,0 +1,155 @@
+.teacher-salary-container {
+    padding: 24px;
+  }
+  
+  .page-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1a202c;
+    margin-bottom: 24px;
+  }
+  
+  .filters-card {
+    margin-bottom: 24px;
+  }
+  
+  .filters-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .search-container {
+    position: relative;
+    flex: 1;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #64748b;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding-left: 40px;
+  }
+  
+  .filters {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .filter-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .filter-select {
+    padding: 8px;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    background-color: white;
+    color: #1a202c;
+  }
+  
+  .salaries-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+  }
+  
+  .salary-card {
+    background-color: white;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .salary-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .salary-info {
+    margin-bottom: 16px;
+  }
+  
+  .salary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .teacher-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a202c;
+  }
+  
+  .salary-status {
+    padding: 4px 8px;
+    border-radius: 9999px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  
+  .salary-status.paid {
+    background-color: #c6f6d5;
+    color: #22543d;
+  }
+  
+  .salary-status.pending {
+    background-color: #fefcbf;
+    color: #744210;
+  }
+  
+  .salary-status.processing {
+    background-color: #e9d8fd;
+    color: #553c9a;
+  }
+  
+  .salary-details {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .detail-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    color: #4a5568;
+  }
+  
+  .icon {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .salary-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .filters-container {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .filters {
+      flex-direction: column;
+    }
+  
+    .salaries-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  

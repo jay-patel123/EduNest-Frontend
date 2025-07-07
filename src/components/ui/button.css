@@ -1,0 +1,52 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+  }
+  
+  .button.default {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .button.default:hover {
+    background-color: #218838;
+  }
+  
+  .button.outline {
+    background-color: transparent;
+    border: 1px solid #e2e8f0;
+    color: #1a1f2b;
+  }
+  
+  .button.outline:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .button.destructive {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .button.destructive:hover {
+    background-color: #c82333;
+  }
+  
+  .button.sm {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+  
+  .button.lg {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+  
+  

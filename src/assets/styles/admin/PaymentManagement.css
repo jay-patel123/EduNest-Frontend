@@ -1,0 +1,124 @@
+/* src/assets/styles/admin/PaymentManagement.css */
+.payment-management-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #1a1f2b;
+}
+
+.add-payment-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.filters-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.search-container {
+  position: relative;
+  flex: 1;
+  max-width: 300px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #64748b;
+}
+
+.search-container input {
+  width: 100%;
+  padding-left: 2.5rem;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+}
+
+.payments-table {
+  background: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.payments-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.payments-table th,
+.payments-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.payments-table th {
+  background: #f8fafc;
+  font-weight: 500;
+  color: #64748b;
+}
+
+.status-badge {
+  position: inherit;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.status-badge.completed {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.status-badge.pending {
+  background: #fef9c3;
+  color: #ca8a04;
+}
+
+.status-badge.scheduled {
+  background: #e0f2fe;
+  color: #0284c7;
+}
+
+@media (max-width: 768px) {
+  .payment-management-container {
+    padding: 1rem;
+  }
+
+  .filters-section {
+    flex-direction: column;
+  }
+
+  .search-container {
+    max-width: none;
+  }
+
+  .filters {
+    width: 100%;
+  }
+}

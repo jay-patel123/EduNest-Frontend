@@ -1,0 +1,22 @@
+.benefits-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .benefits-title {
+    color: #1a9c4b;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .benefit-card {
+    background: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .benefit-card h2 {
+    color: #1a9c4b;
+  }

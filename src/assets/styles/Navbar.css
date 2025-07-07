@@ -1,0 +1,239 @@
+/* .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  
+  .navbar-logo a{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #28a745;
+    text-decoration: none;
+  }
+  
+  .graduation-cap {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links li a:hover {
+    color: #28a745;
+  }
+  
+  .navbar-actions {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .login-btn {
+    padding: 0.5rem 1.5rem;
+    border: 2px solid #28a745;
+    background: transparent;
+    color: #28a745;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .login-btn:hover {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .signup-btn {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    
+  }
+  
+  .signup-btn:hover {
+    background-color: #218838;
+  }
+  
+   */
+
+   .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .navbar-logo a {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #28a745;
+    text-decoration: none;
+  }
+  
+  .graduation-cap {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links li a:hover {
+    color: #28a745;
+  }
+  
+  .navbar-actions {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .login-btn {
+    padding: 0.5rem 1.5rem;
+    border: 2px solid #28a745;
+    background: transparent;
+    color: #28a745;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .login-btn:hover {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .signup-btn {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .signup-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Mobile menu toggle button - hidden by default */
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #28a745;
+    cursor: pointer;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      padding: 1rem;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    /* Hide the links and actions by default on mobile */
+    .navbar-links,
+    .navbar-actions {
+      display: none;
+      width: 100%;
+      flex-direction: column;
+      padding: 0.5rem 0;
+    }
+  
+    /* Show the links and actions when active */
+    .navbar-links.active,
+    .navbar-actions.active {
+      display: flex;
+      position: absolute;
+      left: 0;
+      background-color: white;
+      width: 100%;
+      padding: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      z-index: 10;
+    }
+  
+    /* Position the navbar-links below the header */
+    .navbar-links.active {
+      top: 100%;
+    }
+  
+    /* Position the navbar-actions below the navbar-links */
+    .navbar-actions.active {
+      top: calc(100% + 1rem + 44px * 4); /* Adjust based on number of links */
+      border-top: 1px solid #f0f0f0;
+    }
+  
+    .navbar-links {
+      gap: 1rem;
+    }
+  
+    .login-btn,
+    .signup-btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  /* For very small screens */
+  @media screen and (max-width: 480px) {
+    .navbar-logo a {
+      font-size: 1.2rem;
+    }
+  
+    .graduation-cap {
+      font-size: 1.2rem;
+    }
+  }
+  

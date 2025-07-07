@@ -1,0 +1,21 @@
+.update-profile-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .file-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .file-input-wrapper input[type="file"] {
+    display: none;
+  }
+  
+  

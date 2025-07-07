@@ -1,0 +1,211 @@
+
+
+.teacher-profile-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.profile-header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.profile-header button,
+.profile-header a button {
+  background-color:#22c55e;
+  color: white;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s ease;
+}
+
+.profile-header button:hover,
+.profile-header a button:hover {
+  background-color: #22c55e;
+}
+
+/* Profile Content */
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Profile Card */
+.profile-card {
+  background: linear-gradient(135deg, #00c853, #00e676); /* Green gradient */
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+  color: white; /* Ensure text is visible */
+  text-align: center;
+}
+
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+.bio {
+  margin-top: 1rem;
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.5;
+  word-wrap: break-word;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Contact Info */
+.contact-info {
+  margin-top: 1rem;
+  color: #222; /* Darker text for better contrast */
+  font-weight: 600; /* Make it slightly bolder */
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #111; /* Ensure darker text */
+  font-size: 1rem; /* Slightly larger text for readability */
+  font-weight: bold; /* Make it bold */
+  text-shadow: none; /* Remove unnecessary shadow */
+}
+
+.contact-info {
+  margin-top: 1rem;
+  color: #222; /* Darker text for better contrast */
+  font-weight: 600; /* Make it slightly bolder */
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #111; /* Ensure darker text */
+  font-size: 1rem; /* Slightly larger text for readability */
+  font-weight: bold; /* Make it bold */
+  text-shadow: none; /* Remove unnecessary shadow */
+}
+
+.info-item span {
+  text-shadow: none !important; /* Ensure shadows are not causing blur */
+  opacity: 1 !important; /* Fully visible */
+}
+
+
+
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.stats-grid .card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.stats-grid .card .text-2xl {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #22c55e;
+}
+
+/* Expertise Section */
+.expertise-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.expertise-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.expertise-tag {
+  background-color: #22c55e;
+  color: white;
+  padding: 0.3rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Achievements */
+.achievements-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.achievement-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.achievement-icon {
+  background-color: #e2e8f0;
+  color: #22c55e;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+/* Mobile View Fixes */
+@media (max-width: 768px) {
+  .profile-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .bio {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,88 @@
+/* .dashboard-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  } */
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .card-header h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .view-all-btn {
+    background: none;
+    border: none;
+    color: #27ae60;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .view-all-btn:hover {
+    color: #1e8449;
+  }
+  
+  .courses-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .popular-course-item {
+    background: #f8f9fa;
+    padding: 14px 18px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .popular-course-item:hover {
+    background: #e9ecef;
+    transform: scale(1.02);
+  }
+  
+  .popular-course-info h4 {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .student-count {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+    margin-top: 4px;
+  }
+  
+  .student-count svg {
+    margin-right: 5px;
+  }
+  
+  .course-arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .course-arrow:hover {
+    color: #27ae60;
+  }
+  
