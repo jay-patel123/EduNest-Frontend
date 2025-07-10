@@ -1,6 +1,6 @@
 // Base URL for all API requests
-// const BASE_URL = "https://edunest-backend-pc16.onrender.com/api"
-const BASE_URL ="http://localhost:5000/api"
+const BASE_URL = "https://edunest-backend-pc16.onrender.com/api"
+// const BASE_URL ="http://localhost:5000/api"
 
 // Helper function to get the auth token
 export const getAuthToken = () => {
